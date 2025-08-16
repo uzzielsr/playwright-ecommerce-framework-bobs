@@ -1,0 +1,43 @@
+{
+  "name": "qa",
+  "version": "1.0.0",
+  "description": "Playwright UI and API automation framework for automationexercise.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --reporter=list",
+    "test:headed": "npm run test -- --headed",
+    "test:ui": "npm run test tests/ui",
+    "test:api": "npm run test tests/api",
+    "test:debug": "npm run test -- --debug",
+    "test:prod": "ENV=prod npm run test",
+    "test:qa": "ENV=qa npm run test",
+    "test:uat": "ENV=uat npm run test",
+    "test:chrome": "npm run test -- --project=chromium",
+    "test:firefox": "npm run test -- --project=firefox",
+    "test:webkit": "npm run test -- --project=webkit",
+    "test:prod:headed": "ENV=prod npm run test:headed",
+    "test:qa:headed": "ENV=qa npm run test:headed",
+    "test:uat:headed": "ENV=uat npm run test:headed",
+    "report": "npx playwright show-report",
+    "report:open": "npx playwright show-report --host=0.0.0.0",
+    "install:browsers": "npx playwright install",
+    "install:deps": "npx playwright install-deps",
+    "codegen": "ENV=prod npx playwright codegen",
+    "trace": "npx playwright show-trace"
+  },
+  "keywords": [
+    "playwright",
+    "ui",
+    "api",
+    "automation",
+    "testing",
+    "typescript"
+  ],
+  "author": "Uzziel Sierra",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^24.1.0",
+    "dotenv": "^16.3.1"
+  }
+}
