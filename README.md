@@ -1,14 +1,12 @@
-<<<<<<< HEAD
-
 # Playwright Ecommerce Framework
 
-This project is an end-to-end and API automation framework for [automationexercise.com](https://www.automationexercise.com/), built with Playwright and TypeScript.
+This project is an end-to-end and API automation framework for [mybobs.com](https://www.mybobs.com/), built with Playwright and TypeScript.
 
 ## Key Updates (August 2025)
 
 - **User Data Handling:**
   - Login and checkout tests now use a fixed email from `.env` (`TEST_EMAIL`) to ensure the user exists and login is reliable.
-  - Signup and test user generation use random emails for isolation and to avoid conflicts.
+  - Signup and test user generation, use random emails for isolation and to avoid conflicts.
 - **Overlay Handling:**
   - The PDP Page Object now automatically closes the Attentive overlay if it appears, using the `attentiveCloseButton` locator defined in `pdpLocators`.
 - **Locator Best Practices:**
